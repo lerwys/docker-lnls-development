@@ -6,7 +6,7 @@ MAINTAINER Lucas Russo
 USER root
 
 # Create default admin user
-RUN echo nameserver 10.0.0.71 > /etc/resolv.conf && \
+RUN echo nameserver 10.0.0.71 >> /etc/resolv.conf && \
     yum -y install git maven vim && yum clean all
 
 RUN mkdir -p /opt/lnls
